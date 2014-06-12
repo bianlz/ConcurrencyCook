@@ -23,7 +23,7 @@ public class SearchNumberTask extends RecursiveTask<Integer> {
 		if(end-start>10){
 			ret = this.launchTasks();
 		}else{
-			
+			ret = lookForNumber();
 		}
 		// TODO Auto-generated method stub
 		return null;
