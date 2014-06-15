@@ -1,9 +1,9 @@
 package Test_6.test_5;
 
-public class Contect {
+public class Contact {
 	private String name;
 	private String phone;
-	public Contect(String name,String phone){
+	public Contact(String name,String phone){
 		this.name = name;
 		this.phone = phone;
 	}
