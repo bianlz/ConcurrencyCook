@@ -23,11 +23,14 @@ public abstract class MyWorkerTask extends ForkJoinTask<Void> {
 		Date start = new Date();
 		this.compute();
 		Date finish = new Date();
-		Long diff = start.getTime() - finish.getTime();
+		Long diff = finish.getTime()-start.getTime();
 		System.out.printf("MyWorkerTask: %s : %d Milliseconds to complete.\n",name,diff);
 		return true;
 	}
 	
+	public String getName() {
+		return name;
+	}
 	public abstract void compute();
 
 }
